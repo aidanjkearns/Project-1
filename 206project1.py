@@ -134,7 +134,7 @@ def mySortPrint(a,col,fileName):
 	import csv
 	shortened = list()
 	for person in a:
-		shortened.append({'First': person['First'],'Last': person['Last'],'Email': person['Email']})
+		shortened.append({'First': person['First'],'Last': person['Last'],'Email': person['Email'] + "\n"})
 	keys = shortened[0].keys()
 	if col is 'First':
 		sortfirst = sorted(shortened, key = lambda x: x['First'])
